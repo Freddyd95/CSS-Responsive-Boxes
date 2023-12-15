@@ -1,3 +1,49 @@
 body {
   background: papayawhip;
 }
+
+body {
+  margin: 0;
+  font-family: sans-serif; 
+  text-align: center;
+  text-align: center;
+  background-color: var(--beige);
+  color: var(--pale-sage)
+}
+
+* {
+  border: 1px solid red;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a {
+  min-height: 30vh;
+  flex-grow: 1;
+}
+
+.b {
+  background-color: var(--beige);
+  flex-grow: 5;
+  min-height: 60vh;
+}
+
+ .c .d .e{
+  background-color: var(--maroon);
+  flex-grow: 4;
+  min-height: 30vh;
+  padding: 10px 0px 5px 0px;
+  flex-direction: row;
+
+}                             
+
+.f {
+  background-color: var(--purple);
+flex-grow: 1;
+min-height: 30vh;
+}
