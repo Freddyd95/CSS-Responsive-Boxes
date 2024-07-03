@@ -1,14 +1,8 @@
 body {
   background: blanchedalmond;
-}
-
-body {
   margin: 0;
-  font-family: sans-serif; 
   text-align: center;
-  text-align: center;
-  background-color: var(--beige);
-  color: var(--pale-sage)
+  font-family: 'Courier New', Courier, monospace';
 }
 
 * {
@@ -20,21 +14,37 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .a {
-  min-height: 30vh;
+  background-color: var(--green);
+  min-height: 100%;
   flex-grow: 1;
 }
 
 .b {
   background-color: var(--beige);
-  flex-grow: 5;
+  flex-grow: 4;
   min-height: 60vh;
 }
 
 .c {
   background-color: var(--maroon);
   flex-grow: 1;
-  min-height: 30vh;
-}                             
+  
+}     
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  .a{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .c{
+    max-width: 100%;
+  }
+}
